@@ -1,0 +1,349 @@
+body {
+  margin: 0;
+  display: flex;
+}
+.background {
+  position: absolute;
+}
+body .background .top {
+  position: absolute;
+}
+body .background .bottom {
+  position: fixed;
+  margin-top: 100px;
+  margin-left: 450px;
+  z-index: -1;
+}
+main {
+  width: 100%;
+  padding: 7% 10% 0% 10%;
+}
+.conteudoBg {
+  display: flex;
+  flex-direction: row;
+}
+.container {
+  width: 100%;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+}
+.Conteudo {
+  width: 500px;
+  height: 260px;
+  flex-direction: row;
+}
+.Conteudo .text h1 {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: rgb(80, 32, 80);
+}
+.Conteudo .text p {
+  font-size: 13px;
+  margin-top: -20px;
+  font-weight: 700;
+  color: rgb(147, 123, 146);
+  font-family: "Spartan", sans-serif;
+}
+.Avaliacoes {
+  margin-top: 40px;
+  flex-direction: column;
+}
+.avaback {
+  margin-left: 140px;
+  border-radius: 10px;
+  width: 450px;
+  height: 50px;
+  background-color: rgb(247, 242, 247);
+}
+.avatext {
+  display: flex;
+}
+.estrelas {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.estrelas img {
+  padding-left: 5px;
+}
+.avatext h2 {
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: 4%;
+  color: rgb(80, 32, 80);
+}
+.avaposicao {
+  padding: 6px;
+}
+.avaposicao:nth-child(2) {
+  margin-left: 45px;
+}
+.avaposicao:nth-child(3) {
+  margin-left: 90px;
+}
+.perfis {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+.around {
+  display: flex;
+
+  width: 100%;
+}
+.perfisback {
+  padding: 10px 0px 10px 00px;
+  display: flex;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+.perfisbg {
+  flex-direction: column;
+  border-radius: 10px;
+  display: flex;
+  width: 90%;
+  height: 240px;
+  background-color: rgb(80, 32, 80);
+}
+.foto {
+  display: flex;
+  flex-direction: row;
+  font-family: "Spartan", sans-serif;
+}
+.foto img {
+  margin-top: 40px;
+  margin-left: 30px;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+}
+.fototext h4 {
+  color: white;
+  margin-top: 45px;
+  margin-left: 20px;
+}
+.fototext p {
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: -17px;
+  color: #ee68a4;
+}
+.fototextp p {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+}
+.fototextp {
+  display: flex;
+  padding: 0px 30px 0px 30px;
+}
+.perfisposition:nth-child(2) {
+  margin-top: 20px;
+}
+.perfisposition:nth-child(3) {
+  margin-top: 40px;
+}
+.topcell img {
+  display: none;
+}
+.bottomcell img {
+  display: none;
+}
+@media (max-width: 1040px) {
+  .perfisback {
+    width: 300px;
+  }
+  .fototextp p {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .perfisbg {
+    height: 220px;
+  }
+  .foto img {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  .fototext {
+    margin-top: -14px;
+  }
+
+  .Avaliacoes {
+    margin-left: -260px;
+  }
+  main {
+    margin-left: 7%;
+    margin-top: 10%;
+    padding: 0;
+  }
+}
+@media (max-width: 1004px) {
+  main {
+    margin-left: 2%;
+  }
+}
+
+@media (max-width: 940px) {
+  .background .top img {
+    display: none;
+  }
+  .background .bottom img {
+    display: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .conteudoBg {
+    flex-direction: column;
+  }
+  .Conteudo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .Avaliacoes {
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+  }
+  .perfis {
+    flex-direction: column;
+    width: 100%;
+  }
+  .avaback {
+    margin: 0;
+  }
+  .avaposicao {
+    margin: 0;
+    display: flex;
+
+    justify-content: center;
+  }
+  .perfisback {
+    padding: 0;
+    width: 400px;
+    justify-content: center;
+  }
+  .perfisposition {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .topcell img {
+    display: block;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+  .background {
+    width: 100%;
+  }
+  .bottomcell {
+    width: 100%;
+    margin-top: -200px;
+  }
+  .bottomcell img {
+    display: block;
+    width: 100%;
+    position: fixed;
+
+    z-index: -1;
+  }
+}
+@media (max-width: 598px) {
+  .perfisback {
+    padding: 0;
+    width: 90%;
+    justify-content: center;
+  }
+  .avaposicao {
+    margin: 0;
+  }
+  .avaposicao:nth-child(2) {
+    margin: 0;
+  }
+  .avaposicao:nth-child(3) {
+    margin: 0;
+  }
+}
+@media (max-width: 490px) {
+  .estrelas {
+    margin-left: 20%;
+  }
+  .avatext {
+    margin-left: 17%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .conteudodoconteudo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .Conteudo {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+  }
+  .Conteudo .text h1 {
+    margin-left: 20%;
+
+    font-size: 28px;
+  }
+  .Conteudo .text p {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 13px;
+  }
+  .Conteudo .text p br {
+    display: none;
+  }
+  .avaback {
+    width: 90%;
+    height: auto;
+  }
+}
+@media (max-width: 450px) {
+  .Conteudo .text h1 {
+    margin-left: 15%;
+
+    font-size: 28px;
+  }
+  .estrelas {
+    margin-left: 25%;
+  }
+  .avatext {
+    margin-left: 8%;
+  }
+  .chid1 {
+    margin-left: 15px;
+  }
+  .chid3 {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 340px) {
+  .Conteudo .text h1 {
+    margin-left: 10%;
+    font-size: 28px;
+  }
+  .estrelas {
+    margin-left: 20%;
+  }
+  .avatext {
+    margin-left: 8%;
+  }
+}
